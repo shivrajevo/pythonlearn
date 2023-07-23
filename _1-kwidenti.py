@@ -32,3 +32,10 @@ print("total number keyword in this version is ", keyword.kwlist.__len__())
 # 1_var
 # var#1
 # var 1
+
+
+# output of program
+"""['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 
+'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 
+'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+total number keyword in this version is  35"""

@@ -1,4 +1,5 @@
 import exported
+# import a local module
 import math
 import os
 
@@ -9,3 +10,8 @@ print(exported.add(10, 20))
 print(math.pi)
 
 print(os.getcwd())
+
+# output
+'''30
+3.141592653589793
+C:\Users\directory name '''

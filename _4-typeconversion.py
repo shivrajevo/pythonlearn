@@ -36,3 +36,19 @@ print(type(m), m)
 
 number = str("500")
 print(type(number), number)
+
+# output of progarm
+'''
+example 1
+<class 'int'> 20
+<class 'float'> 2.3
+<class 'float'> 22.3
+
+example 2
+<class 'int'> 10
+<class 'int'> 3
+<class 'float'> 3.3333333333333335
+<class 'int'> 20
+<class 'int'> 20
+<class 'float'> 20.0
+<class 'str'> 500'''

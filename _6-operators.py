@@ -38,6 +38,8 @@ print(" \n ASSIGNMENT OPERATOR")
 x = 20
 y = 10
 
+# it do first oprator work and move the value to left variabe 
+
 print("\n a = {} b = {} \n".format(x, y))
 # addition
 y += x

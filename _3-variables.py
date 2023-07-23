@@ -55,3 +55,16 @@ MAX_SPEED = 500
 
 # use function as constant variable
 print(MAX_SPEED * fun())
+
+# output of program
+
+'''
+40
+<class 'NoneType'>
+<class 'int'>
+<class 'str'>
+<class 'float'>
+<class 'bool'>
+<class 'str'>
+600
+25000'''

@@ -24,5 +24,8 @@ def fun2():
 
 
 print("at module level :", dir())
+# at module level : ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'a', 'b', 'c', 'd', 'fun1', 'fun2']
 fun1()
+# level of fun1  ['a', 'b', 'c']
 fun2()
+# level of fun2  ['a', 'b', 'c', 'd']

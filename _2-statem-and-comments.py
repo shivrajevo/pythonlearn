@@ -14,13 +14,14 @@ for i in range(1, 10 + 1):
 # differnt types of comments in python
 
 # comment by #
+
+# comment by """ """
 """ python
     statement
     loop"""
 
 # Docstring :-
-
-
+# is like a documentation about the function
 def add(a, b):
     """a function to add two numbers
 
@@ -32,3 +33,9 @@ def add(a, b):
 
 
 print(add.__doc__)
+# output
+'''a function to add two numbers
+
+    Args:
+        a (int): value 1
+        b (int): value 2'''
