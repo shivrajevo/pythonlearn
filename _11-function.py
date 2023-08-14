@@ -1,210 +1,225 @@
-# A function is a block of code that performs a task.
-# It can be called and reused multiple times.
-# You can pass information to a function and it can send information back also
+# # A function is a block of code that performs a task.
+# # It can be called and reused multiple times.
+# # You can pass information to a function and it can send information back also
 
-# ------------------------------------ syntax to create a function
+# # ------------------------------------ syntax to create a function
 
-# def <-- keyword use to create a function (in python)*
+# # def <-- keyword use to create a function (in python)*
 
 
-def myname():
-    print(" _your-name_ is my name")
+# def myname():
+#     print(" _your-name_ is my name")
 
 
-myname()  # function calling
+# myname()  # function calling
 
-# if you make a function you can call it many time in function
+# # if you make a function you can call it many time in function
 
-# for example
+# # for example
 
-for i in range(1, 10 + 1):
-    myname()
+# for i in range(1, 10 + 1):
+#     myname()
 
-# -------------------------------------- pass value to function
+# # -------------------------------------- pass value to function
 
-# add parameters in functions
+# # add parameters in functions
 
-def add(a, b):
-    print(a + b)
+# def add(a, b):
+#     print(a + b)
 
 
-add(10, 20)
+# add(10, 20)
 
 
-# -------------------------------------- return value
+# # -------------------------------------- return value
 
-# return statement is work similar as break in loop it treminate the function block exe.
+# # return statement is work similar as break in loop it treminate the function block exe.
 
-# A parameter is the variable listed inside the parentheses in the function definition.
+# # A parameter is the variable listed inside the parentheses in the function definition.
 
 
-def findmax(a, b):
-    if a > b:
-        return a
-    else:
-        return b
+# def findmax(a, b):
+#     if a > b:
+#         return a
+#     else:
+#         return b
 
 
-a = findmax(100, 20)
-# An argument is the value that is sent to the function when it is called.
+# a = findmax(100, 20)
+# # An argument is the value that is sent to the function when it is called.
 
-# print(type(a))
+# # print(type(a))
 
-# print(findmax(100, 20))
+# # print(findmax(100, 20))
 
-# --> if you dont need how many arguments add to function so you can use *args
-# Arbitrary Arguments
+# # --> if you dont need how many arguments add to function so you can use *args
+# # Arbitrary Arguments
 
-# for example
+# # for example
 
-# -------------------------------------------------- arbitrary arguments
+# # -------------------------------------------------- arbitrary arguments
 
 
-def namesprint(*names):
-    print(names[0])
-    for i in names:
-        print(i)
+# def namesprint(*names):
+#     print(names[0])
+#     for i in names:
+#         print(i)
 
 
-namesprint("shivraj", "sukraj", "ramanpreet")
+# namesprint("shivraj", "sukraj", "ramanpreet")
 
-# if you need to pass value with it variable name or Arbitrary Keyword Arguments
+# # if you need to pass value with it variable name or Arbitrary Keyword Arguments
 
 
-def argsname(**details):
-    print(details["name"])
-    print(details["address"])
+# def argsname(**details):
+#     print(details["name"])
+#     print(details["address"])
 
 
-argsname(name="gurjit", address="amritsar")
+# argsname(name="gurjit", address="amritsar")
 
-# ---------------------------------------- pass by value and pass by reference
+# # ---------------------------------------- calling stack
 
+# def first(a):
+#     print("i am first", a)
+#     return a + a
 
-# ---------------------------------------- lamda and use of lamda function
+# def mid(a):
+#     print("i am mid", a)
+#     return a + a
 
-x = lambda a: a + 10
+# def last(a):
+#     print("i am last", a)
+#     return a + a
 
-print(x(5))
+# result = first(mid(last(10)))
 
-# use a function to make a another function
+# print(result)
 
+# # ---------------------------------------- lamda and use of lamda function
 
-def powerfun(n):
-    return lambda a: a * n
+# x = lambda a: a + 10
 
+# print(x(5))
 
-squareof = powerfun(2)
+# # use a function to make a another function
 
-cubeof = powerfun(3)
 
-print(squareof(2))
-print(cubeof(2))
+# def powerfun(n):
+#     return lambda a: a * n
 
-# ----------------------------------------------------- recursion **
 
-# call same function inside that function
+# squareof = powerfun(2)
 
-#  a recursive function is a function that calls itself within its own code.
-# Recursion can be used to solve problems that can be broken down into smaller
-# subproblems of the same kind.
+# cubeof = powerfun(3)
 
-# solve factorial using recursion
+# print(squareof(2))
+# print(cubeof(2))
 
+# # ----------------------------------------------------- recursion **
 
-def findfact(n):
-    if n <= 1:
-        return 1
-    else:
-        return n * findfact(n - 1)
+# # call same function inside that function
 
+# #  a recursive function is a function that calls itself within its own code.
+# # Recursion can be used to solve problems that can be broken down into smaller
+# # subproblems of the same kind.
 
-print("fact :", findfact(5))
+# # solve factorial using recursion
 
-# view stack
 
+# def findfact(n):
+#     if n <= 1:
+#         return 1
+#     else:
+#         return n * findfact(n - 1)
 
-# ------------------------------------------------------ Global, Local and Nonlocal scopes
 
-# --------------------------GLOBAL
-# declare global variable
-message = "Hello"
-#  any variable outside any programmer defined scope is global scope
+# print("fact :", findfact(5))
 
-def greet():
-    # declare local variable
-    print("Local", message)
+# # view stack
 
 
-greet()
-print("Global", message)
+# # ------------------------------------------------------ Global, Local and Nonlocal scopes
 
+# # --------------------------GLOBAL
+# # declare global variable
+# message = "Hello"
+# #  any variable outside any programmer defined scope is global scope
 
-# -------------------------LOCAL
-def greet():
-    # local variable
-    message = "Hello"
+# def greet():
+#     # declare local variable
+#     print("Local", message)
 
-    print("Local", message)
 
+# greet()
+# print("Global", message)
 
-greet()
 
-# try to access message variable
-# outside greet() function
-# print(message) # give error
+# # -------------------------LOCAL
+# def greet():
+#     # local variable
+#     message = "Hello"
 
+#     print("Local", message)
 
-# -------------------------NONLOCAL
 
+# greet()
 
-# outside function
-def outer():
-    message = "local"
+# # try to access message variable
+# # outside greet() function
+# # print(message) # give error
 
-    # nested function
-    def inner():
-        # declare nonlocal variable
-        nonlocal message
 
-        message = "nonlocal"
-        print("inner:", message)
+# # -------------------------NONLOCAL
 
-    inner()
-    print("outer:", message)
 
+# # outside function
+# def outer():
+#     message = "local"
 
-outer()
-print(message)
+#     # nested function
+#     def inner():
+#         # declare nonlocal variable
+#         nonlocal message
 
-# ------------------------------------------------------- use of global keyword
+#         message = "nonlocal"
+#         print("inner:", message)
 
-# --> try to change global variable value in local scope
-c = 10
+#     inner()
+#     print("outer:", message)
 
 
-def add():
-    # increment c by 2
-    c = c + 2
+# outer()
+# print(message)
 
-    print(c)
+# # ------------------------------------------------------- use of global keyword
 
+# # --> try to change global variable value in local scope
+# c = 10
 
-add()
 
-# re-declaration of global variable with "global" keyword
+# def add():
+#     # increment c by 2
+#     c = c + 2
 
+#     print(c)
 
-def sub():
-    # use of global keyword
-    global c
 
-    # increment c by 2
-    c = c - 2
+# add()
 
-    print(c)
+# # re-declaration of global variable with "global" keyword
 
 
-sub()
+# def sub():
+#     # use of global keyword
+#     global c
 
-# Output is 3
+#     # increment c by 2
+#     c = c - 2
+
+#     print(c)
+
+
+# sub()
+
+# # Output is 3

@@ -39,3 +39,8 @@ print(add.__doc__)
     Args:
         a (int): value 1
         b (int): value 2'''
+
+# tostring()
+# convert that comment lines into string and remove holder of other functions 
+# over all structure of a android program is very safe and secure of
+# for internal bleading afterall 
