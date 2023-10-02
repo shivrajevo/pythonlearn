@@ -11,11 +11,11 @@
 #     print(" _your-name_ is my name")
 
 
-# myname()  # function calling
+# # myname()  # function calling
 
-# # if you make a function you can call it many time in function
+# # # if you make a function you can call it many time in function
 
-# # for example
+# # # for example
 
 # for i in range(1, 10 + 1):
 #     myname()
@@ -23,6 +23,7 @@
 # # -------------------------------------- pass value to function
 
 # # add parameters in functions
+
 
 # def add(a, b):
 #     print(a + b)
@@ -46,11 +47,12 @@
 
 
 # a = findmax(100, 20)
+# print(a)
 # # An argument is the value that is sent to the function when it is called.
 
 # # print(type(a))
 
-# # print(findmax(100, 20))
+# print(findmax(100, 20))
 
 # # --> if you dont need how many arguments add to function so you can use *args
 # # Arbitrary Arguments
@@ -68,6 +70,7 @@
 
 # namesprint("shivraj", "sukraj", "ramanpreet")
 
+
 # # if you need to pass value with it variable name or Arbitrary Keyword Arguments
 
 
@@ -78,19 +81,23 @@
 
 # argsname(name="gurjit", address="amritsar")
 
-# # ---------------------------------------- calling stack
+# # ---------------------------------------- function as agrument
+
 
 # def first(a):
 #     print("i am first", a)
 #     return a + a
 
+
 # def mid(a):
 #     print("i am mid", a)
 #     return a + a
 
+
 # def last(a):
 #     print("i am last", a)
 #     return a + a
+
 
 # result = first(mid(last(10)))
 
@@ -108,6 +115,9 @@
 # def powerfun(n):
 #     return lambda a: a * n
 
+
+# # def (a):
+# #    return a * 2
 
 # squareof = powerfun(2)
 
@@ -127,14 +137,14 @@
 # # solve factorial using recursion
 
 
-# def findfact(n):
+# def fact(n):
 #     if n <= 1:
 #         return 1
 #     else:
-#         return n * findfact(n - 1)
+#         return n * fact(n - 1)
 
 
-# print("fact :", findfact(5))
+# print("fact :", fact(5))
 
 # # view stack
 
@@ -145,6 +155,7 @@
 # # declare global variable
 # message = "Hello"
 # #  any variable outside any programmer defined scope is global scope
+
 
 # def greet():
 #     # declare local variable
@@ -223,3 +234,8 @@
 # sub()
 
 # # Output is 3
+
+
+# # --------------------------------------------------- default value
+# def add(a=0, b=0):
+#     print(a + b)

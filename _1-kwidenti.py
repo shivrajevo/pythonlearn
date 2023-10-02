@@ -1,10 +1,10 @@
 # Keywords and Identifires
 
 # keywords
-# Python Keywords are some predefined and reserved words in python that have special 
-# meanings. Keywords are used to define the syntax of the coding. The keyword cannot be 
-# used as an identifier, function, or variable name. All the keywords in python are 
-# written in lowercase except True and False.
+# Python Keywords are some predefined and reserved words in python that have special meanings. 
+# Keywords are used to define the syntax of the coding.
+# The keyword cannot be used as an identifier, function, or variable name. 
+# All the keywords in python are written in lowercase except True and False.
 
 # to get a list of all identifiers
 import keyword
@@ -25,6 +25,7 @@ print("total number keyword in this version is ", keyword.kwlist.__len__())
 # _var1
 # _1_var
 # var_1
+
 # Invalid Identifiers
 
 # !var1

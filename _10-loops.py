@@ -4,6 +4,12 @@
 # condition based on specified boundaries
 
 
+
+# ----------------------------------- simple loop
+
+for i in range(1,10):
+    print(i)
+
 # ----------------------------------- nested for loop
 
 for i in range(1, 10):
