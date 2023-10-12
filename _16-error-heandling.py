@@ -22,3 +22,35 @@ except:
     print("exe if error in code")
 finally:
     print("program is checked")
+
+
+# try:
+#     print(45 / 0)
+# except ZeroDivisionError:
+#     print("zero division error a gia ")
+# except NameError:
+#     print("name error a gia ")
+# finally:
+#     print("checked")
+
+
+# print("i am exe")
+
+
+# class myerror(Exception):
+#     "Raised when the input value is less than 18"
+#     pass
+
+
+# # you need to guess this number
+# number = 18
+
+# try:
+#     userinp = int(input("Enter a number: "))
+#     if userinp < number:
+#         raise myerror
+#     else:
+#         print("Eligible to Vote")
+
+# except myerror:
+#     print("Exception occurred: Invalid Age")
