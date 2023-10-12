@@ -1,5 +1,4 @@
 # PYTHON OS MODULE
-
 import os
 import os.path
 
@@ -26,7 +25,6 @@ def list_all():
         flag += 1
 
 
-
 # making a function that list all the folder in a directory
 def list_folder():
     flag = 0
@@ -47,3 +45,19 @@ def list_fileonly():
         else:
             print(f"{flag} > ", i)
             flag += 1
+
+
+# to change the directory at runtime
+# os.chdir(os.getcwd() + "/..")
+
+
+def get_alldirs():
+    flag = 0
+    for root, dirs, files in os.walk(".", topdown=True):
+        flag += 1
+        print(f"{flag} ", root)
+        # print(dirs)
+        # print(files)
+
+
+get_alldirs()
