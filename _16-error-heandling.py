@@ -24,7 +24,7 @@ finally:
     print("program is checked")
 
 
-# try:
+# try:bhnc
 #     print(45 / 0)
 # except ZeroDivisionError:
 #     print("zero division error a gia ")
