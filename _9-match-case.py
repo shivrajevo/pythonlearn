@@ -34,4 +34,3 @@ match temprature:
         print("tempratrue is extreme")
     case _:
         print("default")
-
