@@ -1,5 +1,6 @@
 # member hiding / data hiding
 
+
 class A:
     def __init__(self, name, mobile, password):
         # a normal variable
@@ -18,4 +19,4 @@ class B(A):
 
 obj = A("shivraj", 902735072, "880sk87sl")
 
-print(obj.__private)
+print(obj._A__private)

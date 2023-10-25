@@ -1,7 +1,7 @@
-# method overloading:
+# method overriding:
 class animal:
     def sound(self):
-        pass
+        print("no sound")
 
 
 class dog(animal):
@@ -23,11 +23,11 @@ class crow(animal):
     def sound(self):
         print("crow : ca-oo ca-oo")
 
-
-obj = dog()
-
-obj.sound()
-
+    def fullfun(self):
+        super().sound()
+        self.sound()
 
 
-manveer is good boy
+obj = crow()
+
+obj.fullfun()

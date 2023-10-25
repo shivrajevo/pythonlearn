@@ -22,6 +22,10 @@ class child(parent):
         self.grade = grade
 
 
+
+
 obj = child("shivraj", 9, "A")
 
 obj.getdetails()
+
+
