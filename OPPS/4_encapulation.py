@@ -1,3 +1,5 @@
+# member hiding / data hiding
+
 class A:
     def __init__(self, name, mobile, password):
         # a normal variable
