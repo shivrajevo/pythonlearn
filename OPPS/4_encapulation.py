@@ -19,4 +19,4 @@ class B(A):
 
 obj = A("shivraj", 902735072, "880sk87sl")
 
-print(obj._A__private)
+# print(obj._A__private)
